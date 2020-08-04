@@ -1,0 +1,4 @@
+CREATE FUNCTION getLevenshteinDistance(@first as nvarchar(50), @second AS nvarchar(50))
+RETURNS INT
+AS
+EXTERNAL NAME CLRfunctions.myFunctions.getLevenshteinDistance
